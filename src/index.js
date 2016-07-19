@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import Home from './containers/Home';
 import About from './containers/About';
 import Projects from './containers/Projects';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';

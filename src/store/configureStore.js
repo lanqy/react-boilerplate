@@ -22,7 +22,7 @@ export default function configureStore(initialState) {
     });
   }
 
-  store.dispatch(Actions.authenticateUser());
+  //store.dispatch(Actions.authenticateUser());
 
   return store;
 }

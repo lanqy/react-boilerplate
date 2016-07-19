@@ -27,13 +27,17 @@ module.exports = {
       test: /\.html$/,
       loader: "file?name=[name].[ext]"
     },
-    
-    { 
+
+    {
       test: /\.js$/,
       exclude: /node_modules/,
       loaders: ["babel-loader"]
-    }
-    
+    },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
+      }
+
     ]
   }
 
