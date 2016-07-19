@@ -3,6 +3,10 @@ import { Link } from 'react-router';
 import '../styles/app.css';
 export default class Home extends React.Component {
   render(){
-    return <h3>Home</h3>
+    return (
+      <div className="container">
+        <h3>Home</h3>
+      </div>
+    )
   }
 }
