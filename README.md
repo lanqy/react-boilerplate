@@ -1,7 +1,7 @@
 # react boilerplate
 react redux react-router etc
 
-# Getting Started
+## Getting Started
 
 ```js
 npm install
