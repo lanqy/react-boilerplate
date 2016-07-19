@@ -11,6 +11,7 @@ npm install
 ```js
 npm run start
 ```
+visit :http://localhost:8080
 
 ## build
 
