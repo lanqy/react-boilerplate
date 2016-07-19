@@ -1,4 +1,4 @@
-# react rcosystem boilerplate
+# react boilerplate
 react redux react-router etc
 
 # Getting Started
@@ -11,7 +11,7 @@ npm install
 ```js
 npm run start
 ```
-visit :http://localhost:8080
+open: http://localhost:8080
 
 ## build
 
