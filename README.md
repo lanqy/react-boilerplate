@@ -9,11 +9,11 @@ npm install
 
 ## start
 ```js
-npm start
+npm run start
 ```
 
 ## build
 
 ```js
-npm build
+npm run build
 ```
