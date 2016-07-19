@@ -1,15 +1,15 @@
 {
-  "name": "React-rcosystem-boilerplate",
+  "name": "react-redux-react-router-boilerplate",
   "version": "1.0.0",
-  "description": "about Redux,React and React-Router",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "node node_modules/webpack/bin/webpack.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react","redux","react-router"],
-  "author": "lanqy",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -58,7 +58,10 @@
     "react-router-redux": "^4.0.5",
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
+    "redux-form": "^5.3.1",
+    "redux-promise": "^0.5.3",
     "redux-router": "^2.0.0",
+    "redux-thunk": "^2.1.0",
     "reselect": "^2.5.3",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
