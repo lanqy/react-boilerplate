@@ -7,7 +7,7 @@ export default class Header extends React.Component {
       <nav className="navbar navbar-default">
         <div className="container-fluid">
           <div className="navbar-header">
-            <Link className="navbar-brand" to="/">React redux</Link>
+            <Link className="navbar-brand" to="/">Home</Link>
           </div>
           <ul className="nav navbar-nav navbar-right">
             <li className="nav-item" key={1}>
