@@ -1,3 +1,2 @@
-# react-redux-react-router-boilerplate
-react redux react-router boilerpla
- 
+# react rcosystem boilerplate
+react redux react-router etc
