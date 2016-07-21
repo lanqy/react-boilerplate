@@ -6,32 +6,39 @@ export const DEL_PROJECTS = 'DEL_PROJECTS';
 export const ADD_ABOUT = 'ADD_ABOUT';
 export const DEL_ABOUT = 'DEL_ABOUT';
 
-export const addProject = (text) => {
-  return {
-    type:ADD_PROJECTS,
-    id:nextProjectId++,
-    text
+export function addProject(text){
+  return function(dispatch) {
+    dispatch({
+        type:ADD_PROJECTS,
+        id:nextProjectId++,
+        text
+    });
   }
 }
 
-export const delProject = (index) => {
-  return {
-    type:DEL_PROJECTS,
-    index
+export function delProject(index){
+  return function(dispatch){
+    dispatch({
+        type:DEL_PROJECTS,
+        index
+    })
   }
 }
 
-export const addAbout = (text) => {
-    return {
+export function addAbout(text){
+  return function(dispatch){
+    dispatch({
       type:ADD_ABOUT,
       id:nextAboutId++,
       text
-    }
+    })
+  }
 }
-
-export const delAbout = (index) => {
-    return {
-      type:DEL_ABOUT,
-      index
-    }
+export function delAbout(index){
+  return function(dispatch){
+    dispatch({
+        type:DEL_ABOUT,
+        index
+    })
+  }
 }

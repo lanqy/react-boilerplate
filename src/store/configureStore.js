@@ -22,7 +22,17 @@ export default function configureStore(initialState) {
     });
   }
 
-  //store.dispatch(Actions.authenticateUser());
+  /** add some data
+   *
+   *
+   */
+
+  for(var i = 0;i<10;i++){
+    store.dispatch(Actions.addProject("Project title"));
+  }
+
+  store.dispatch(Actions.addAbout("test add about"));
+  store.dispatch(Actions.addAbout("test add about1"));
 
   return store;
 }

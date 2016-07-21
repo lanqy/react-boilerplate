@@ -1,0 +1,5 @@
+*{padding:0;margin:0;}
+li{list-style: none;line-height:28px; position: relative;}
+li s{position: absolute;right:0;text-decoration: none;display: inline-block;background:#000;text-align: center;color:#fff;padding:3px;}
+.title{border-bottom: 1px solid #ddd;height:50px;line-height: 50px;}
+.add-btn{margin:10px auto;padding:8px;display: inline-block;}
