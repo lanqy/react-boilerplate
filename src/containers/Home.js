@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/common.css';
 import '../styles/app.css';
+import '../styles/common.css';
 export default class Home extends React.Component {
   render(){
     return (

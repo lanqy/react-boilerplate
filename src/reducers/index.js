@@ -5,7 +5,8 @@ import { reducer as FormReducer } from 'redux-form';
 
 const rootReducer = combineReducers({
   project: projectReducer,
-  about: aboutReducer
+  about: aboutReducer,
+  form: FormReducer
 });
 
 export default rootReducer;

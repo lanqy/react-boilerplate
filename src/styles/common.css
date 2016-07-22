@@ -1,5 +1,6 @@
 *{padding:0;margin:0;}
-li{list-style: none;line-height:28px; position: relative;}
-li s{position: absolute;right:0;text-decoration: none;display: inline-block;background:#000;text-align: center;color:#fff;padding:3px;}
+li{list-style: none;height:28px;line-height:28px; position: relative;}
+li s{position: absolute;right:0;top:0;text-decoration: none;display: inline-block;background:#000;text-align: center;color:#fff;height:20px;line-height: 20px;padding:2px 3px;cursor:pointer;}
+li s:hover{background: #bc3ae4;}
 .title{border-bottom: 1px solid #ddd;height:50px;line-height: 50px;}
-.add-btn{margin:10px auto;padding:8px;display: inline-block;}
+.btn-add{margin:20px auto;padding:8px;display: block;width:50%;}
