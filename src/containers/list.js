@@ -7,8 +7,8 @@ export default class List extends React.Component {
   constructor(props, context) { // 获取上下文
       super(props, context);
       this.state = {projects: this.context.store.getState().project};
-    //  console.log("context", this.context);
-     console.log("props:", this.props);
+      console.log("context", this.context);
+      console.log("props:", this.props);
   }
 
   render(){
@@ -22,23 +22,18 @@ export default class List extends React.Component {
     )
   }
 
-    addProject(store,e){
-      store.dispatch(Actions.addProject("Project title"));
-      this.updateState(store);
-    }
+  remove(component,e){
+    console.log(component);
+    //console.log(store);
+  //  store.dispatch(Actions.delProject(index));
+  //  this.updateState(store)
+  }
 
-    remove(component,e){
-      console.log(component);
-      //console.log(store);
-    //  store.dispatch(Actions.delProject(index));
-    //  this.updateState(store)
-    }
-
-    updateState(store){ // update
-      this.setState({
-        projects:store.getState().project
-      });
-    }
+  updateState(store){ // update
+    this.setState({
+      projects:store.getState().project
+    });
+  }
 }
 
 List.contextTypes = { // context

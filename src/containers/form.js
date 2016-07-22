@@ -5,13 +5,9 @@ export const fields = [ 'item'];
 
 class Form extends React.Component {
 
-  constructor(props, context) {
-      super(props, context);
-      console.log('context:',this.context);
-  }
-
   handleFormSubmit = (values) => {
     console.log(values.item); // you can validate in here
+    console.log("props:",this.props);
     if(values.item){
         this.props.dispatch(Actions.addProject(values.item));
     }
@@ -26,10 +22,6 @@ class Form extends React.Component {
       </form>
     )
   }
-}
-
-Form.contextTypes = {
-  form: React.PropTypes.object.isRequired
 }
 
 export default reduxForm({
