@@ -8,7 +8,7 @@ export default class List extends React.Component {
       super(props, context);
       this.state = {projects: this.context.store.getState().project};
     //  console.log("context", this.context);
-    //  console.log("props", this.props);
+     console.log("props:", this.props);
   }
 
   render(){
@@ -28,7 +28,7 @@ export default class List extends React.Component {
     }
 
     remove(component,e){
-      //console.log(component);
+      console.log(component);
       //console.log(store);
     //  store.dispatch(Actions.delProject(index));
     //  this.updateState(store)
