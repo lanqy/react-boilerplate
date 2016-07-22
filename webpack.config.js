@@ -19,16 +19,23 @@ module.exports = {
   },
   devServer: {
     contentBase: PATHS.dist,
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: true
   },
 
   module: {
     loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel'
+      },
      {
       test: /\.html$/,
       loader: "file?name=[name].[ext]"
     },
-
     {
       test: /\.js$/,
       exclude: /node_modules/,
@@ -38,8 +45,9 @@ module.exports = {
         test: /\.css$/,
         loader: 'style!css'
       }
-
     ]
-  }
-
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
